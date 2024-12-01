@@ -31,6 +31,7 @@ sequelize.sync()
     console.error('Erro ao sincronizar o banco de dados:', err);
   });
 
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
+  });
+  
